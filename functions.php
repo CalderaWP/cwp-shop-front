@@ -41,6 +41,9 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
   */
  function cwp_sf_child_scripts_styles() {
 	$postfix = ( defined( 'SCRIPT_DEBUG' ) && true === SCRIPT_DEBUG ) ? '' : '.min';
+	//re-enqueue parent theme style
+	wp_deregister_style( 'style' );
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
 
 	wp_enqueue_script( 'cwp_sf_child', get_template_directory_uri() . "/assets/js/cwp_theme_front_child_theme{$postfix}.js", array(), CWP_SF_CHILD_VERSION, true );
 		
