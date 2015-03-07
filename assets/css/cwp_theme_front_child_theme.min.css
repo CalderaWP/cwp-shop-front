@@ -2,9 +2,11 @@
 /* Greens */
 /* Greys & whites */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
-body, #site-title { font-family: 'Roboto', sans-serif; font-weight: normal; }
+body, #site-title { font-family: 'Roboto', sans-serif; font-weight: 300; }
 
-h1, h2, h3, div.edd_price, form p label { font-weight: 400; color: #4b4b4b; }
+h1, h2 { font-weight: 300; }
+
+h3, div.edd_price, form p label { font-weight: 400; color: #4b4b4b; }
 
 a { color: #107a6f; }
 
@@ -23,7 +25,11 @@ a { color: #107a6f; }
 #masthead #secondary-menu a.has-icon { padding: 10px 11px; }
 #masthead #secondary-menu a:hover { background: #4b4b4b; color: #fff; }
 
+/* footer */
 #footer { background: #3a3a3c; color: #cfcfcf; }
+#footer .widget-title { color: #fff; font-weight: 300; }
+#footer a { color: #cfcfcf; }
+#footer a:hover { color: #fff; }
 
 /* Buttons */
 .edd_submit, #submit, .button { background: #a3bf61; }

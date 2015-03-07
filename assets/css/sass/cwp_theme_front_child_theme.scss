@@ -10,9 +10,12 @@
 
 body, #site-title{
 	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
+	font-weight: 300;
 }
-h1, h2, h3, div.edd_price, form p label{
+h1, h2 {
+	font-weight: 300;
+}
+h3, div.edd_price, form p label{
 	font-weight: 400;
 	color: $grey;
 }
@@ -38,40 +41,51 @@ a{
 	
 }
 #masthead {
-background: $dark_gray;
-#site-title-wrap > nav {
-	display: inline-block;
-	float: right;
-	margin: 0;
-	position: relative;
-}	
-#site-title {
-	padding: 12px;
+	background: $dark_gray;
+	#site-title-wrap > nav {
+		display: inline-block;
+		float: right;
+		margin: 0;
+		position: relative;
+	}	
+	#site-title {
+		padding: 12px;
+	}
+	#site-title a { 
+		color: $white;
+		font-weight: 300;
+	}
+	> .wrapper{
+		padding: 0;
+	}
+	#site-description{display: none;}
+	#secondary-menu a {
+		color: $lighter_grey;
+		margin: 0;
+		padding: 22px 11px;
+	}
+	#secondary-menu a.has-icon{
+		padding: 10px 11px;		
+	}
+	#secondary-menu a:hover{
+		background: $grey;
+		color: $white;
+	}
 }
-#site-title a { 
-	color: $white;
-	font-weight: 300;
-}
-> .wrapper{
-	padding: 0;
-}
-#site-description{display: none;}
-#secondary-menu a {
-	color: $lighter_grey;
-	margin: 0;
-	padding: 22px 11px;
-}
-#secondary-menu a.has-icon{
-	padding: 10px 11px;		
-}
-#secondary-menu a:hover{
-	background: $grey;
-	color: $white;
-}
-}
+/* footer */
 #footer {
-background: $dark_gray;
-color: $lighter_grey;
+	background: $dark_gray;
+	color: $lighter_grey;
+	.widget-title{
+		color: $white;
+		font-weight: 300;
+	}
+	a{
+		color: $lighter_grey;
+		&:hover{
+			color: $white;
+		}
+	}
 }
 
 /* Buttons */
