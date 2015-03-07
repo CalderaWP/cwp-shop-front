@@ -42,6 +42,7 @@ a{
 }
 #masthead {
 	background: $dark_gray;
+	margin-bottom: 20px;
 	#site-title-wrap > nav {
 		display: inline-block;
 		float: right;
@@ -95,6 +96,65 @@ a{
 .edd_submit, #submit, .button{
 	background: $primary_green;
 	padding: 0.55em 1em;
+}
+#secondary.widget-area {
+	.edd_price{
+		color: #fff;
+	}
+	> .edd_price{
+		background: $orange;
+		border-radius: 4px;		
+		margin-bottom: 2rem;
+		text-align: center;
+		text-shadow: 0 1px 2px #000;
+		font-size: 1.5rem;
+		padding: 12px;
+		box-shadow: 0 4px 0 $lighter_grey;
+	}
+	.edd_price_options {
+		background: lighten( $lighter_grey, 10% );
+		padding: 12px;
+		border-radius: 4px;
+	}	
+	.edd_price_option_price{
+		color: $orange;
+		font-weight: 400;
+	}
+	#download-meta {
+		background: lighten( $lighter_grey, 12% );
+		border-bottom: 1px solid lighten( $lighter_grey, 5% );
+		border-top: 1px solid lighten( $lighter_grey, 5% );
+		padding: 4px 0;
+	}	
+}
+/* Sidebar - download */
+.single-download{
+	#secondary{
+		float: left;
+		width: 40%;
+		max-width: 40%;
+	}
+	#primary{
+		float: right;
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 719px) {
+	.single-download{
+		#secondary{
+			clear: both;
+			width: 100%;
+			max-width: 100%;
+			.download-title{
+				text-align: center;
+				font-size: 2.0rem;
+			}
+		}
+		#primary{
+			clear: both;
+			width: 100%;
+		}
+	}
 }
 .widget-area{
 	.edd-add-to-cart,

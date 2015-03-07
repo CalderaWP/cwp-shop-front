@@ -1,6 +1,7 @@
 /** CWP Theme Front Child Theme https://github.com/CalderaWP/cwp-shop-front  Copyright (c) 2015 CalderaWP Licensed under the GPLv2+ license. */
 /* Greens */
 /* Greys & whites */
+/* Colors */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
 body, #site-title { font-family: 'Roboto', sans-serif; font-weight: 300; }
 
@@ -15,7 +16,7 @@ a { color: #107a6f; }
 #main ul.menu > li > a:hover { background: #107a6f; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a { background: #4b4b4b; }
 
-#masthead { background: #3a3a3c; }
+#masthead { background: #3a3a3c; margin-bottom: 20px; }
 #masthead #site-title-wrap > nav { display: inline-block; float: right; margin: 0; position: relative; }
 #masthead #site-title { padding: 12px; }
 #masthead #site-title a { color: #fff; font-weight: 300; }
@@ -36,6 +37,19 @@ a { color: #107a6f; }
 
 .edd_submit, #submit, .button { background: #a3bf61; padding: 0.55em 1em; }
 
+#secondary.widget-area .edd_price { color: #fff; }
+#secondary.widget-area > .edd_price { background: #ff7e30; border-radius: 4px; margin-bottom: 2rem; text-align: center; text-shadow: 0 1px 2px #000; font-size: 1.5rem; padding: 12px; box-shadow: 0 4px 0 #cfcfcf; }
+#secondary.widget-area .edd_price_options { background: #e9e9e9; padding: 12px; border-radius: 4px; }
+#secondary.widget-area .edd_price_option_price { color: #ff7e30; font-weight: 400; }
+#secondary.widget-area #download-meta { background: #eeeeee; border-bottom: 1px solid gainsboro; border-top: 1px solid gainsboro; padding: 4px 0; }
+
+/* Sidebar - download */
+.single-download #secondary { float: left; width: 40%; max-width: 40%; }
+.single-download #primary { float: right; width: 50%; }
+
+@media only screen and (max-width: 719px) { .single-download #secondary { clear: both; width: 100%; max-width: 100%; }
+  .single-download #secondary .download-title { text-align: center; font-size: 2.0rem; }
+  .single-download #primary { clear: both; width: 100%; } }
 .widget-area .edd-add-to-cart, .widget-area .edd_go_to_checkout { width: 100%; border-radius: 4px; box-shadow: 0 4px 0 #cfcfcf; }
 .widget-area .single-download div.edd_price { font-size: 1.5rem; line-height: 1.2; }
 .widget-area .edd_go_to_checkout + .edd-cart-ajax-alert, .widget-area .edd_download_purchase_form + .edd-cart-added-alert { margin-top: 0; }
