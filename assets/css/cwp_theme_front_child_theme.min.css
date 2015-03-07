@@ -62,7 +62,7 @@ a { color: #107a6f; }
 /* Easy Pods Stuff */
 .product-preview { float: left; min-height: 300px; width: 33.3333%; }
 .product-preview h5 { text-align: center; }
-.product-preview .product-tagline { padding: 22px; }
+.product-preview .product-tagline { padding: 4px 16px 16px; }
 
 @media only screen and (min-width: 420px) and (max-width: 720px) { .product-preview { float: left; height: 380px; padding: 22px; width: 50%; }
   .product-preview .product-tagline { padding: 22px; } }
