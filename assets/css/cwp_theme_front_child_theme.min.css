@@ -9,7 +9,7 @@ h1, h2, h3, div.edd_price, form p label { font-weight: 400; color: #4b4b4b; }
 a { color: #107a6f; }
 
 #main { background: #a3bf61; }
-#main ul.menu > li.current-menu-item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
+#main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
 #main ul.menu > li > a:hover { background: #107a6f; }
 #main ul.menu > li.current-menu-item > a { background: #4b4b4b; }
 
