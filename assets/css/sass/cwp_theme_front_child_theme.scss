@@ -5,3 +5,77 @@
  * Copyright (c) 2015 CalderaWP
  * Licensed under the GPLv2+ license.
  */
+@import "colors";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body, #site-title{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+h1, h2, h3, div.edd_price, form p label{
+	font-weight: 400;
+	color: $grey;
+}
+a{
+	color: $dark_green;
+}
+#main {
+	background: $primary_green;
+	ul.menu > li.current-menu-item > a,
+	ul.menu > li > a:hover,
+	ul.menu > li > a {
+		color: $white;
+		background: $primary_green;
+	}
+	ul.menu > li > a:hover{
+		background: $dark_green;
+	} 	
+	ul.menu > li.current-menu-item > a{
+		background: $grey;
+	}
+	
+}
+#masthead {
+background: $dark_gray;
+#site-title-wrap > nav {
+	display: inline-block;
+	float: right;
+	margin: 0;
+	position: relative;
+}	
+#site-title {
+	padding: 12px;
+}
+#site-title a { 
+	color: $white;
+	font-weight: 300;
+}
+> .wrapper{
+	padding: 0;
+}
+#site-description{display: none;}
+#secondary-menu a {
+	color: $lighter_grey;
+	margin: 0;
+	padding: 22px 11px;
+}
+#secondary-menu a.has-icon{
+	padding: 10px 11px;		
+}
+#secondary-menu a:hover{
+	background: $grey;
+	color: $white;
+}
+}
+#footer {
+background: $dark_gray;
+color: $lighter_grey;
+}
+
+/* Buttons */
+.edd_submit, #submit, .button{
+	background: $primary_green;
+}
+.edd_submit:hover, #submit:hover, .button:hover, .edd_submit.active, #submit.active, .button.active{
+	background: $primary_green_dark;
+}
