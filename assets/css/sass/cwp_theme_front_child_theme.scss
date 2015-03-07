@@ -192,7 +192,7 @@ a{
 /* Easy Pods Stuff */
 .product-preview {
 	float: left;
-	min-height: 300px;	
+	min-height: 300px;
 	width: 33.3333%;
 	h5{
 		text-align: center;
@@ -204,7 +204,7 @@ a{
 @media only screen and (min-width: 420px) and (max-width: 720px) {
 	.product-preview {
 		float: left;
-		height: 380px;
+		min-height: 280px;
 		width: 50%;
 		.product-tagline{
 			padding: 22px;
@@ -213,8 +213,8 @@ a{
 }
 @media only screen and (max-width: 419px) {
 	.product-preview {
+		min-height: 200px;
 		float: left;
-		height: 380px;
 		width: 100%;
 	}
 }
