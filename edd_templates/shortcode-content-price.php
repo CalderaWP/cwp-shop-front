@@ -8,6 +8,8 @@ do_action( 'shopfront_the_title' ); // The shopfront_render_the_title() function
 
 echo '<p class="download-exceprt">' . get_the_excerpt() . '</p>';
 
+do_action( 'shopfront_single_download_image' ); // The single download image is loaded on this hook
+
 $coming_soon = isset( $post->ID ) ? get_post_meta( $post->ID, 'edd_coming_soon', true ) : '';
 $coming_soon_text = isset( $post->ID ) ? get_post_meta( $post->ID, 'edd_coming_soon_text', true ) : '';
 
