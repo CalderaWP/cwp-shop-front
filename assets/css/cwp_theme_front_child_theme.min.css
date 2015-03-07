@@ -44,7 +44,7 @@ a { color: #107a6f; }
 #secondary.widget-area #download-meta { background: #eeeeee; border-bottom: 1px solid gainsboro; border-top: 1px solid gainsboro; padding: 4px 0; }
 
 /* Sidebar - download */
-.single-download #secondary { float: left; width: 40%; max-width: 40%; }
+.single-download #secondary { float: left; width: 43%; max-width: 43%; }
 .single-download #secondary .download-image { display: none; }
 .single-download #primary { float: right; width: 50%; }
 
