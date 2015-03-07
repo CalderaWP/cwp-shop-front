@@ -31,7 +31,8 @@ a{
 	ul.menu > li > a:hover{
 		background: $dark_green;
 	} 	
-	ul.menu > li.current-menu-item > a{
+	ul.menu > li.current-menu-item > a,
+	ul.menu > li.current_page_item > a{
 		background: $grey;
 	}
 	

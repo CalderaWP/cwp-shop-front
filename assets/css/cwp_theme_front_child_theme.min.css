@@ -11,7 +11,7 @@ a { color: #107a6f; }
 #main { background: #a3bf61; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
 #main ul.menu > li > a:hover { background: #107a6f; }
-#main ul.menu > li.current-menu-item > a { background: #4b4b4b; }
+#main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a { background: #4b4b4b; }
 
 #masthead { background: #3a3a3c; }
 #masthead #site-title-wrap > nav { display: inline-block; float: right; margin: 0; position: relative; }
