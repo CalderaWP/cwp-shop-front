@@ -88,10 +88,100 @@ a{
 	}
 }
 
-/* Buttons */
+/* Buttons & EDD */
+.large {
+  font-size: 1.2rem;
+}
 .edd_submit, #submit, .button{
 	background: $primary_green;
+	padding: 0.55em 1em;
+}
+.widget-area{
+	.edd-add-to-cart,
+	.edd_go_to_checkout{
+		width: 100%;
+		border-radius: 4px;
+		box-shadow: 0 4px 0 $lighter_grey;
+	}
+	.single-download div.edd_price {
+	  font-size: 1.5rem;
+	  line-height: 1.2;
+	}	
+	.edd_go_to_checkout + .edd-cart-ajax-alert, .edd_download_purchase_form + .edd-cart-added-alert{
+		margin-top: 0;
+	}
+	.edd-cart-added-alert{
+		padding: 4px;
+		color: $grey;
+		text-align: center;
+		background: $lighter_grey;
+		width: 100%;
+		border-radius: 0 0 4px 4px;
+	}
 }
 .edd_submit:hover, #submit:hover, .button:hover, .edd_submit.active, #submit.active, .button.active{
 	background: $primary_green_dark;
+}
+
+/* Easy Pods Stuff */
+.product-preview {
+	float: left;
+	height: 380px;
+	padding: 22px;
+	width: 33.3333%;
+	h5{
+		text-align: center;
+	}
+	.product-tagline{
+		padding: 22px;
+	}
+}
+@media only screen and (min-width: 420px) and (max-width: 720px) {
+	.product-preview {
+		float: left;
+		height: 380px;
+		padding: 22px;
+		width: 50%;
+		.product-tagline{
+			padding: 22px;
+		}		
+	}
+}
+@media only screen and (max-width: 419px) {
+	.product-preview {
+		float: left;
+		height: 380px;
+		padding: 22px;
+		width: 100%;
+	}
+}
+
+/* Pagination - Pods Stuff */
+
+.search-pagination {
+	clear: both;
+	background: lighten( $lighter_grey, 12%);
+	border: 1px solid lighten( $lighter_grey, 8%);
+	display: block;
+	margin: 12px 0 24px;
+	padding: 3px 3px 5px;
+	border-radius: 2px;
+	min-height: 32px;
+}
+.pods-pagination-number {
+	background: $primary_green;
+	border-radius: 3px;
+	display: inline-block;
+	min-width: 22px;
+	font-size: 0.8em;
+	padding: 2px 11px;
+	text-align: center;
+	color: $white;	
+	&.pods-pagination-current {
+		background: $dark_green;
+	}
+	&:hover{
+		color: $white;
+		background: $grey;
+	}
 }
