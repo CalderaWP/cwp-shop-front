@@ -64,9 +64,9 @@ a { color: #107a6f; }
 .product-preview h5 { text-align: center; }
 .product-preview .product-tagline { padding: 4px 16px 16px; }
 
-@media only screen and (min-width: 420px) and (max-width: 720px) { .product-preview { float: left; height: 380px; padding: 22px; width: 50%; }
+@media only screen and (min-width: 420px) and (max-width: 720px) { .product-preview { float: left; height: 380px; width: 50%; }
   .product-preview .product-tagline { padding: 22px; } }
-@media only screen and (max-width: 419px) { .product-preview { float: left; height: 380px; padding: 22px; width: 100%; } }
+@media only screen and (max-width: 419px) { .product-preview { float: left; height: 380px; width: 100%; } }
 /* Pagination - Pods Stuff */
 .search-pagination { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
 
