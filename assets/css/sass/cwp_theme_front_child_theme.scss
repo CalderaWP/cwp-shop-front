@@ -192,8 +192,7 @@ a{
 /* Easy Pods Stuff */
 .product-preview {
 	float: left;
-	height: 380px;
-	padding: 22px;
+	min-height: 300px;	
 	width: 33.3333%;
 	h5{
 		text-align: center;
