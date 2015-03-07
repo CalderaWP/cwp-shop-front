@@ -9,11 +9,11 @@ h1, h2 { font-weight: 300; }
 
 h3, div.edd_price, form p label { font-weight: 400; color: #4b4b4b; }
 
-a { color: #107a6f; }
+a { color: #7e943d; }
 
 #main { background: #a3bf61; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
-#main ul.menu > li > a:hover { background: #107a6f; }
+#main ul.menu > li > a:hover { background: #7e943d; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a { background: #4b4b4b; }
 
 #masthead { background: #3a3a3c; margin-bottom: 20px; }
@@ -71,5 +71,5 @@ a { color: #107a6f; }
 .search-pagination { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
 
 .pods-pagination-number { background: #a3bf61; border-radius: 3px; display: inline-block; min-width: 22px; font-size: 0.8em; padding: 2px 11px; text-align: center; color: #fff; }
-.pods-pagination-number.pods-pagination-current { background: #107a6f; }
+.pods-pagination-number.pods-pagination-current { background: #7e943d; }
 .pods-pagination-number:hover { color: #fff; background: #4b4b4b; }
