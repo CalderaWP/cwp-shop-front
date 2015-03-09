@@ -11,6 +11,8 @@ h3, div.edd_price, form p label { font-weight: 400; color: #4b4b4b; }
 
 a { color: #7e943d; }
 
+hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none; border-width: 1px 0 0; margin: 40px 0; }
+
 #main { background: #a3bf61; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
 #main ul.menu > li > a:hover { background: #7e943d; }
@@ -18,12 +20,13 @@ a { color: #7e943d; }
 
 #masthead { background: #3a3a3c; margin-bottom: 20px; }
 #masthead #site-title-wrap > nav { display: inline-block; float: right; margin: 0; position: relative; }
-#masthead #site-title { padding: 12px; }
-#masthead #site-title a { color: #fff; font-weight: 300; }
+#masthead #site-title a { color: transparent; font-weight: 300; font-size: 33px; background: url("../../images/inline-logo.png") no-repeat scroll left center/164px auto transparent; height: 94px; margin-left: 16px; padding: 0; width: 170px; }
+@media only screen and (max-width: 840px) { #masthead #site-title a { background: url("../../images/globe-logo.png") no-repeat scroll center center/84px auto transparent; width: 104px; } }
+@media only screen and (max-width: 719px) { #masthead #site-title a { background: url("../../images/stack-logo.png") no-repeat scroll center center/100px auto transparent; width: 104px; margin-left: 0; } }
 #masthead > .wrapper { padding: 0; }
 #masthead #site-description { display: none; }
-#masthead #secondary-menu a { color: #cfcfcf; margin: 0; padding: 22px 11px; }
-#masthead #secondary-menu a.has-icon { padding: 10px 11px; }
+#masthead #secondary-menu a { color: #cfcfcf; margin: 0; padding: 40px 15px; }
+#masthead #secondary-menu a.has-icon { padding: 28px 15px; }
 #masthead #secondary-menu a:hover { background: #4b4b4b; color: #fff; }
 
 /* footer */
@@ -31,6 +34,7 @@ a { color: #7e943d; }
 #footer .widget-title { color: #fff; font-weight: 300; }
 #footer a { color: #cfcfcf; }
 #footer a:hover { color: #fff; }
+#footer p.copyright { background: url("../../images/stack-logo.png") no-repeat scroll center top/100px auto transparent; display: block; padding: 100px 0 0; }
 
 /* Buttons & EDD */
 .large { font-size: 1.2rem; }

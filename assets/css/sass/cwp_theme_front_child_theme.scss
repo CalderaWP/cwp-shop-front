@@ -22,6 +22,13 @@ h3, div.edd_price, form p label{
 a{
 	color: $dark_green;
 }
+hr {
+  border-color: $lighter_grey;
+  border-right: 0 none;
+  border-style: solid none none;
+  border-width: 1px 0 0;
+  margin: 40px 0;
+}
 #main {
 	background: $primary_green;
 	ul.menu > li.current-menu-item > a,
@@ -49,12 +56,28 @@ a{
 		margin: 0;
 		position: relative;
 	}	
-	#site-title {
-		padding: 12px;
-	}
 	#site-title a { 
-		color: $white;
+		color: transparent;
 		font-weight: 300;
+		font-size: 33px;
+		background: url("../../images/inline-logo.png") no-repeat scroll left center / 164px auto rgba(0, 0, 0, 0);
+		height: 94px;
+		margin-left: 16px;
+		padding: 0;
+		width: 170px;
+	}
+	@media only screen and (max-width: 840px) {
+		#site-title a {
+			background: url("../../images/globe-logo.png") no-repeat scroll center center / 84px auto transparent;
+			width: 104px;
+		}
+	}
+	@media only screen and (max-width: 719px) {
+		#site-title a {
+			background: url("../../images/stack-logo.png") no-repeat scroll center center / 100px auto transparent;
+			width: 104px;
+			margin-left: 0;
+		}
 	}
 	> .wrapper{
 		padding: 0;
@@ -63,10 +86,10 @@ a{
 	#secondary-menu a {
 		color: $lighter_grey;
 		margin: 0;
-		padding: 22px 11px;
+		padding: 40px 15px;
 	}
 	#secondary-menu a.has-icon{
-		padding: 10px 11px;		
+		padding: 28px 15px;		
 	}
 	#secondary-menu a:hover{
 		background: $grey;
@@ -86,6 +109,11 @@ a{
 		&:hover{
 			color: $white;
 		}
+	}
+	p.copyright{
+		background: url("../../images/stack-logo.png") no-repeat scroll center top / 100px auto transparent;
+		display: block;
+		padding: 100px 0 0;
 	}
 }
 
