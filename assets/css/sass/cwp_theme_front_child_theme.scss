@@ -234,8 +234,12 @@ hr {
 	width: 33.3333%;
 	h5{
 		text-align: center;
+		margin: 0;
 	}
 	.product-tagline{
+		background: none repeat scroll 0 0 #e2e2e2;
+		border-radius: 0 0 5px 5px;
+		margin: 0 12px;
 		padding: 4px 16px 16px;
 	}
 }

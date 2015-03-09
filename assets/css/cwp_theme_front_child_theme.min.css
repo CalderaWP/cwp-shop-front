@@ -67,8 +67,8 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 
 /* Easy Pods Stuff */
 .product-preview { float: left; min-height: 300px; width: 33.3333%; }
-.product-preview h5 { text-align: center; }
-.product-preview .product-tagline { padding: 4px 16px 16px; }
+.product-preview h5 { text-align: center; margin: 0; }
+.product-preview .product-tagline { background: none repeat scroll 0 0 #e2e2e2; border-radius: 0 0 5px 5px; margin: 0 12px; padding: 4px 16px 16px; }
 
 @media only screen and (min-width: 420px) and (max-width: 720px) { .product-preview { float: left; min-height: 280px; width: 50%; }
   .product-preview .product-tagline { padding: 22px; } }
