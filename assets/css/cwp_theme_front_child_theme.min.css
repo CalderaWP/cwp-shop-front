@@ -20,6 +20,8 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 
 .active { color: #3a3a3c; }
 
+.caldera-grid a:hover, .caldera-grid a:focus { color: #fff; text-decoration: none; }
+
 #masthead { background: #3a3a3c; margin-bottom: 20px; }
 #masthead #site-title-wrap > nav { display: inline-block; float: right; margin: 0; position: relative; }
 #masthead #site-title a { color: transparent; font-weight: 300; font-size: 33px; background: url("../../images/inline-logo.png") no-repeat scroll left center/164px auto transparent; height: 94px; margin-left: 16px; padding: 0; width: 170px; }
@@ -80,6 +82,6 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 /* Pagination - Pods Stuff */
 .search-pagination { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
 
-.pods-pagination-number { background: #a3bf61; border-radius: 3px; display: inline-block; min-width: 22px; font-size: 0.8em; padding: 2px 11px; text-align: center; color: #fff; }
-.pods-pagination-number.pods-pagination-current { background: #7e943d; }
-.pods-pagination-number:hover { color: #fff; background: #4b4b4b; }
+a.pods-pagination-number, .pods-pagination-number { background: #a3bf61; border-radius: 3px; display: inline-block; min-width: 22px; font-size: 0.8em; padding: 2px 11px; text-align: center; color: #fff; }
+a.pods-pagination-number.pods-pagination-current, .pods-pagination-number.pods-pagination-current { background: #7e943d; }
+a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; background: #4b4b4b; }

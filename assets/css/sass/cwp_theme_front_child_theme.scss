@@ -48,6 +48,10 @@ hr {
 	
 }
 .active{ color: $dark_gray; }
+.caldera-grid a:hover, .caldera-grid a:focus{
+	color: $white;
+	text-decoration: none;
+}
 #masthead {
 	background: $dark_gray;
 	margin-bottom: 20px;
@@ -278,6 +282,7 @@ hr {
 	border-radius: 2px;
 	min-height: 32px;
 }
+a.pods-pagination-number ,
 .pods-pagination-number {
 	background: $primary_green;
 	border-radius: 3px;
