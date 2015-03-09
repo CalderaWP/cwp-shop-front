@@ -41,7 +41,7 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 /* Buttons & EDD */
 .large { font-size: 1.2rem; }
 
-.edd_submit, #submit, .button { background: #a3bf61; padding: 0.55em 1em; }
+.edd_submit, #submit, .button { background: #a3bf61; color: #fff; padding: 0.55em 1em; }
 
 #secondary.widget-area .edd_price { color: #fff; }
 #secondary.widget-area > .edd_price { background: #ff7e30; border-radius: 4px; margin-bottom: 2rem; text-align: center; text-shadow: 0 1px 2px #000; font-size: 1.5rem; padding: 12px; box-shadow: 0 4px 0 #cfcfcf; }
