@@ -136,9 +136,12 @@ hr {
 	color: $white;
 	padding: 0.55em 1em;
 }
+.cf-toggle-group-buttons .btn.button{
+	color: $white;
+}
 #secondary.widget-area {
 	.edd_price{
-		color: #fff;
+		color: $white;
 	}
 	> .edd_price{
 		background: $orange;
