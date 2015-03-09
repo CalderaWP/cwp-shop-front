@@ -66,19 +66,6 @@ hr {
 		padding: 0;
 		width: 170px;
 	}
-	@media only screen and (max-width: 840px) {
-		#site-title a {
-			background: url("../../images/globe-logo.png") no-repeat scroll center center / 84px auto transparent;
-			width: 104px;
-		}
-	}
-	@media only screen and (max-width: 719px) {
-		#site-title a {
-			background: url("../../images/stack-logo.png") no-repeat scroll center center / 100px auto transparent;
-			width: 104px;
-			margin-left: 0;
-		}
-	}
 	> .wrapper{
 		padding: 0;
 	}
@@ -95,6 +82,29 @@ hr {
 		background: $grey;
 		color: $white;
 	}
+
+	@media only screen and (max-width: 840px) {
+		#site-title a {
+			background: url("../../images/globe-logo.png") no-repeat scroll center center / 84px auto transparent;
+			width: 104px;
+		}
+	}
+	@media only screen and (max-width: 719px) {
+		#site-title a {
+			background: url("../../images/stack-logo.png") no-repeat scroll center center / 100px auto transparent;
+			width: 104px;
+			margin-left: 0;
+		}
+		#secondary-menu a {
+			color: $lighter_grey;
+			margin: 0;
+			padding: 12px 8px;
+		}
+		#secondary-menu a.has-icon{
+			padding: 9px 8px;		
+		}
+	}
+
 }
 /* footer */
 #footer {
