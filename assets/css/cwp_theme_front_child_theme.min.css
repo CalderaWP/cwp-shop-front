@@ -60,6 +60,8 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 .single-download #secondary .download-image { display: none; }
 .single-download #primary { float: right; width: 50%; }
 
+.single-doc #primary { width: 100%; }
+
 @media only screen and (max-width: 719px) { .single-download #secondary { clear: both; width: 100%; max-width: 100%; }
   .single-download #secondary .download-title { text-align: center; font-size: 2.0rem; }
   .single-download #secondary .download-image { display: block; }
