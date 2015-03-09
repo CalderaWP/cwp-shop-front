@@ -87,3 +87,8 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 a.pods-pagination-number, .pods-pagination-number { background: #a3bf61; border-radius: 3px; display: inline-block; min-width: 22px; font-size: 0.8em; padding: 2px 11px; text-align: center; color: #fff; }
 a.pods-pagination-number.pods-pagination-current, .pods-pagination-number.pods-pagination-current { background: #7e943d; }
 a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; background: #4b4b4b; }
+
+/* General Pages */
+.wrapper article { margin-bottom: 50px; }
+
+.download-title a:hover, .entry-title a:hover { color: #a3bf61; }

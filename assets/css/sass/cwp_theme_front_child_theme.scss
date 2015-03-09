@@ -305,3 +305,11 @@ a.pods-pagination-number ,
 		background: $grey;
 	}
 }
+
+/* General Pages */
+.wrapper article {
+  margin-bottom: 50px;
+}
+.download-title a:hover, .entry-title a:hover{
+	color: $primary_green;	
+}
