@@ -20,7 +20,7 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 
 .active { color: #3a3a3c; }
 
-.caldera-grid a:hover, .caldera-grid a:focus { color: #fff; text-decoration: none; }
+.caldera-grid a:hover, .caldera-grid a:focus { color: #93af51; text-decoration: none; }
 
 #masthead { background: #3a3a3c; margin-bottom: 20px; }
 #masthead #site-title-wrap > nav { display: inline-block; float: right; margin: 0; position: relative; }
