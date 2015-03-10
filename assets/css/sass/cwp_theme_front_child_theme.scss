@@ -245,7 +245,7 @@ hr {
 /* Easy Pods Stuff */
 .product-preview {
 	float: left;
-	min-height: 300px;
+	min-height: 240px;
 	width: 33.3333%;
 	h5{
 		text-align: center;
@@ -277,7 +277,7 @@ hr {
 }
 @media only screen and (max-width: 419px) {
 	.product-preview {
-		min-height: 200px;
+		min-height: 180px;
 		float: left;
 		width: 100%;
 	}

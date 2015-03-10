@@ -74,14 +74,14 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
 .edd_submit:hover, #submit:hover, .button:hover, .edd_submit.active, #submit.active, .button.active { background: #93af51; }
 
 /* Easy Pods Stuff */
-.product-preview { float: left; min-height: 300px; width: 33.3333%; }
+.product-preview { float: left; min-height: 240px; width: 33.3333%; }
 .product-preview h5 { text-align: center; margin: 0; }
 .product-preview .product-tagline { background: none repeat scroll 0 0 #e2e2e2; border-radius: 0 0 3px 3px; margin: -9px 12px 0; min-height: 74px; padding: 8px 16px; }
 .product-preview img { border-width: 0 2px 0; border-color: #fff; border-style: solid; }
 
 @media only screen and (min-width: 420px) and (max-width: 720px) { .product-preview { float: left; min-height: 280px; width: 50%; }
   .product-preview .product-tagline { padding: 22px; } }
-@media only screen and (max-width: 419px) { .product-preview { min-height: 200px; float: left; width: 100%; } }
+@media only screen and (max-width: 419px) { .product-preview { min-height: 180px; float: left; width: 100%; } }
 /* Pagination - Pods Stuff */
 .pods-pagination-advanced { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
 
