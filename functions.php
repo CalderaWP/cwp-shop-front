@@ -60,3 +60,58 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
 	echo apply_filters( 'cwp_sf_child_humans', $humans );
  }
  add_action( 'wp_head', 'cwp_sf_child_header_meta' );
+
+
+
+include( dirname( __FILE__ ) . '/includes/CWP_Social.php' );
+
+ /**
+ * Bio shortcode
+ */
+add_shortcode( 'cwp_bio', 'cwp_bio_shortcode' );
+function cwp_bio_shortcode( $atts, $content = '' ) {
+   $atts = shortcode_atts( array(
+       'who' => 'david',
+   ), $atts, 'cwp_bio' );
+
+
+   return cwp_bio_box( $atts[ 'who' ], $content );
+}
+
+/**
+ * Show a bio, with gravatar and social links.
+ *
+ * @param string $who Whose bio david|josh
+ * @param string $bio The actual bio content.
+ *
+ * @return string|void
+ */
+function cwp_bio_box( $who, $bio ) {
+   $data = CWP_Social::our_data( $who );
+
+   if ( is_array( $data ) ) {
+      $name = $data['name'];
+
+
+      $social_html = CWP_Social::social_html( $data[ 'social' ], $name );
+
+      $out[] = '<div class="about-box">';
+      $out[] = sprintf( '<div class="about-left">%1s %2s</div>',
+          '<div class="gravatar-box">' . get_avatar( $data['gravatar'] ) . '</div>',
+          '<div class="social">' . $social_html . '</div>'
+      );
+      $out[] = '<div class="about-right"><div class="bio">'.$bio.'</div></div>';
+      $out[] = '</div>';
+      $out[] = '<div class="clear"></div>';
+
+      $out = implode( '', $out );
+
+      $out = str_replace( 'Pods Framework', '<a href="http://Pods.io" title="Pods -- WordPress Custom Content Types and Fields" target="_blank">Pods Framework</a>', $out );
+
+
+      return $out;
+
+   }
+
+
+}
