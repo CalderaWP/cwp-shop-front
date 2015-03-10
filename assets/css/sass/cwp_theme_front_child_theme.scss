@@ -259,6 +259,10 @@ hr {
 		padding: 8px 16px;
 
 	}
+	img{
+		border-width: 0 2px 0;
+		border-color: $white;
+	}
 }
 @media only screen and (min-width: 420px) and (max-width: 720px) {
 	.product-preview {
