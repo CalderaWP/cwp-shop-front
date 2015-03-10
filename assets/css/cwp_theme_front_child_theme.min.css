@@ -107,3 +107,7 @@ a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; bac
 .product-contact-form .footer-button:hover, .product-contact-form .form-control:focus { box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.17); }
 
 .product-contact-form .footer-button:active { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.09), 0 0 0 3px rgba(0, 0, 0, 0.04) inset; }
+
+#footer .footer-button { color: #fff; font-weight: 400; padding: 9px; }
+
+#footer .form-control { background: none repeat scroll 0 0 #333; border: 0 none; border-radius: 4px; height: 40px; padding: 0 13px; }
