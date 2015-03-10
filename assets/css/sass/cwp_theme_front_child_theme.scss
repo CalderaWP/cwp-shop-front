@@ -146,6 +146,12 @@ input, textarea, select {
 	color: $white;
 	padding: 0.75em 1em;
 }
+.edd_purchase_submit_wrapper{
+	.button{
+		background: $orange;
+	}
+}
+
 .cf-toggle-group-buttons .btn.button{
 	color: $white;
 }
@@ -154,7 +160,7 @@ input, textarea, select {
 		color: $white;
 	}
 	> .edd_price{
-		background: $orange;
+		background: $primary_green;
 		border-radius: 4px;		
 		margin-bottom: 2rem;
 		text-align: center;
