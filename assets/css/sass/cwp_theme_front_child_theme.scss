@@ -322,17 +322,21 @@ a.pods-pagination-number ,
   margin-bottom: 60px;
   padding: 20px;
 }
+.product-contact-form > h2 {
+  color: $white;
+  text-shadow: 0 1px 2px #333;
+}
 .product-contact-form .product-page-mailing-list-opt-in {
   background: none repeat scroll 0 0 #333;
   border-radius: 3px;
-  color: #fff;
+  color: $white;
   font-size: 12px;
   padding: 7px 9px 4px;
 }
 .product-contact-form .footer-button {
   background: none repeat scroll 0 0 #839f41;
   border: 1px solid #718d4e;
-  color: #fff;
+  color: $white;
 	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.09);
 }
 .product-contact-form .form-control:hover,
