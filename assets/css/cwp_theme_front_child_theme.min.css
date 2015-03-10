@@ -92,3 +92,16 @@ a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; bac
 .wrapper article { margin-bottom: 50px; }
 
 .download-title a:hover, .entry-title a:hover { color: #a3bf61; }
+
+/* Footer Form */
+.product-contact-form { background: none repeat scroll 0 0 #a3bf61; border-radius: 5px; box-shadow: 0 5px 0 rgba(0, 0, 0, 0.16); margin-bottom: 60px; padding: 20px; }
+
+.product-contact-form .product-page-mailing-list-opt-in { background: none repeat scroll 0 0 #333; border-radius: 3px; color: #fff; font-size: 12px; padding: 7px 9px 4px; }
+
+.product-contact-form .footer-button { background: none repeat scroll 0 0 #839f41; border: 1px solid #718d4e; color: #fff; box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.09); }
+
+.product-contact-form .form-control:hover, .product-contact-form .form-control:focus, .product-contact-form .form-control { border: 0 none; box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.09); }
+
+.product-contact-form .footer-button:hover, .product-contact-form .form-control:focus { box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.17); }
+
+.product-contact-form .footer-button:active { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.09), 0 0 0 3px rgba(0, 0, 0, 0.04) inset; }
