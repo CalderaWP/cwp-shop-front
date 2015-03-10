@@ -89,7 +89,7 @@ a.pods-pagination-number.pods-pagination-current, .pods-pagination-number.pods-p
 a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; background: #4b4b4b; }
 
 /* General Pages */
-.wrapper article { margin-bottom: 50px; }
+.wrapper article.type-post { margin-bottom: 50px; }
 
 .download-title a:hover, .entry-title a:hover { color: #a3bf61; }
 
