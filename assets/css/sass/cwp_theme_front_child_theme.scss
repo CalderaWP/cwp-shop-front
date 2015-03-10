@@ -29,6 +29,11 @@ hr {
   border-width: 1px 0 0;
   margin: 40px 0;
 }
+input, textarea, select {
+  border-color: #cfcfcf;
+  display: inline-block;
+  margin: 2px 0;
+}
 #main {
 	background: $primary_green;
 	ul.menu > li.current-menu-item > a,
@@ -405,3 +410,5 @@ a.pods-pagination-number ,
 		}
 	}
 }
+
+
