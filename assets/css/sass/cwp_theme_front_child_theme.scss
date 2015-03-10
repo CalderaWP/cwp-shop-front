@@ -253,9 +253,11 @@ hr {
 	}
 	.product-tagline{
 		background: none repeat scroll 0 0 #e2e2e2;
-		border-radius: 0 0 5px 5px;
+		border-radius: 0 0 3px 3px;
 		margin: -9px 12px 0;
-		padding: 8px 16px 8px;
+		min-height: 74px;
+		padding: 8px 16px;
+
 	}
 }
 @media only screen and (min-width: 420px) and (max-width: 720px) {
