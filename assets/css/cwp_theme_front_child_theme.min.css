@@ -82,7 +82,7 @@ hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none;
   .product-preview .product-tagline { padding: 22px; } }
 @media only screen and (max-width: 419px) { .product-preview { min-height: 200px; float: left; width: 100%; } }
 /* Pagination - Pods Stuff */
-.search-pagination { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
+.pods-pagination-advanced { clear: both; background: #eeeeee; border: 1px solid #e3e3e3; display: block; margin: 12px 0 24px; padding: 3px 3px 5px; border-radius: 2px; min-height: 32px; }
 
 a.pods-pagination-number, .pods-pagination-number { background: #a3bf61; border-radius: 3px; display: inline-block; min-width: 22px; font-size: 0.8em; padding: 2px 11px; text-align: center; color: #fff; }
 a.pods-pagination-number.pods-pagination-current, .pods-pagination-number.pods-pagination-current { background: #7e943d; }
