@@ -142,7 +142,7 @@ input, textarea, select {
   font-size: 1.2rem;
 }
 .edd_submit, #submit, .button{
-	background: $orange;
+	background: $primary_green;
 	color: $white;
 	padding: 0.75em 1em;
 }
@@ -154,7 +154,7 @@ input, textarea, select {
 		color: $white;
 	}
 	> .edd_price{
-		background: $primary_green;
+		background: $orange;
 		border-radius: 4px;		
 		margin-bottom: 2rem;
 		text-align: center;
