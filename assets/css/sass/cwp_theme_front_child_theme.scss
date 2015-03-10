@@ -6,7 +6,7 @@
  * Licensed under the GPLv2+ license.
  */
 @import "colors";
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,200,500);
 
 body, #site-title{
 	font-family: 'Roboto', sans-serif;
@@ -322,7 +322,7 @@ a.pods-pagination-number ,
   margin-bottom: 60px;
   padding: 20px;
 }
-.product-contact-form > h2 {
+.product-contact-form h2 {
   color: $white;
   text-shadow: 0 1px 2px #333;
 }
