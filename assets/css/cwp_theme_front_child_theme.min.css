@@ -13,6 +13,8 @@ a { color: #7e943d; }
 
 hr { border-color: #cfcfcf; border-right: 0 none; border-style: solid none none; border-width: 1px 0 0; margin: 40px 0; }
 
+input, textarea, select { border-color: #cfcfcf; display: inline-block; margin: 2px 0; }
+
 #main { background: #a3bf61; }
 #main ul.menu > li.current-menu-item > a, #main ul.menu > li.current_page_item > a, #main ul.menu > li > a:hover, #main ul.menu > li > a { color: #fff; background: #a3bf61; }
 #main ul.menu > li > a:hover { background: #7e943d; }
