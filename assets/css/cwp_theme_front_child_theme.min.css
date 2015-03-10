@@ -2,7 +2,7 @@
 /* Greens */
 /* Greys & whites */
 /* Colors */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,200,500);
 body, #site-title { font-family: 'Roboto', sans-serif; font-weight: 300; }
 
 h1, h2 { font-weight: 300; }
@@ -96,7 +96,7 @@ a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; bac
 /* Footer Form */
 .product-contact-form { background: none repeat scroll 0 0 #a3bf61; border-radius: 5px; box-shadow: 0 5px 0 rgba(0, 0, 0, 0.16); margin-bottom: 60px; padding: 20px; }
 
-.product-contact-form > h2 { color: #fff; text-shadow: 0 1px 2px #333; }
+.product-contact-form h2 { color: #fff; text-shadow: 0 1px 2px #333; }
 
 .product-contact-form .product-page-mailing-list-opt-in { background: none repeat scroll 0 0 #333; border-radius: 3px; color: #fff; font-size: 12px; padding: 7px 9px 4px; }
 
