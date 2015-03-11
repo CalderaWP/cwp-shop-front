@@ -133,3 +133,13 @@ add_action( 'wp_head', function(){
 	</script>
 <?php
 });
+
+
+/**
+* Add Favicon
+*/
+add_action( 'wp_header', function() {
+	?>
+	<link rel="shortcut icon" href="<?php echo esc_url( trailingslashit( get_stylesheet_directory_uri() ) . 'favicon.ico' ); ?>/" type="image/x-icon" />
+<?php
+});
