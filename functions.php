@@ -153,3 +153,17 @@ add_action( 'wp_head', function() {
 	 return $html;
 
  });
+
+/**
+ * Remove EDD's microdata on post title in the "After Download" Pods Template
+ */
+add_filter( 'pods_templates_pre_template',
+	function( $code, $template ) {
+		if ( isset( $template[ 'name'] ) && 'After Download' == $template[ 'name'] ) {
+			remove_filter( 'the_title', 'edd_microdata_title', 10, 2 );
+		}
+
+		return $code;
+
+	}, 10, 2
+);
