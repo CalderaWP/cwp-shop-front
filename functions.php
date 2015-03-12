@@ -143,3 +143,13 @@ add_action( 'wp_head', function() {
 	<link rel="shortcut icon" href="<?php echo esc_url( trailingslashit( get_stylesheet_directory_uri() ) . 'favicon.ico' ); ?>/" type="image/x-icon" />
 <?php
 });
+
+/**
+ * Licensing FAQ Link
+ */
+ add_filter( 'edd_purchase_download_form', function( $html ) {
+	 $url = get_permalink( 1577 );
+	 $html .= sprintf( '<div class="license-term-link"><a href="%1s" title="Licensing Terms" target="_blank">Licensing FAQ</a> </div>', esc_url( $url ) );
+	 return $html;
+
+ });
