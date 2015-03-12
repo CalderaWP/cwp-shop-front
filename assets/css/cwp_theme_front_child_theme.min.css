@@ -124,18 +124,3 @@ a.pods-pagination-number:hover, .pods-pagination-number:hover { color: #fff; bac
 .about-box .social { text-align: center; padding: 4px; }
 .about-box .social a { color: #747474; padding: 2px; }
 .about-box .social a:hover { color: #93af51; }
-
-/* Modal Stuff */
-.baldrickytp-modal-wrap .spinner.loading { background-position: center center; display: inline-block; float: none; height: auto; position: absolute; width: auto; }
-
-/* MODALS */
-.baldrickytp-backdrop { background: none repeat scroll 0 0 #000000; bottom: 0; display: block; left: 0; min-height: 360px; opacity: 0.7; position: fixed; right: 0; top: 0; z-index: 100100; }
-
-.baldrickytp-modal-body { box-sizing: border-box; height: 100%; margin-left: 0; margin-right: 0; margin-top: 0; overflow: hidden; padding: 0; position: absolute; width: 100%; }
-
-.baldrickytp-modal-wrap { background-color: #000; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); display: block; position: fixed; transition: height 0.2s ease 0s, margin-top 0.2s ease 0s; width: 500px; z-index: 100105; }
-
-.baldrickytp-modal-wrap.baldrickytp-front-modal-wrap { position: absolute; bottom: auto; width: 600px; margin-left: -300px; margin-top: 0; }
-
-@media (max-width: 600px) { /* Small Screens */
-  .baldrickytp-modal-wrap.baldrickytp-front-modal-wrap { bottom: 0; display: block; left: 0; margin: 0 !important; overflow: auto; padding: 0 !important; top: 0; width: 100% !important; } }
