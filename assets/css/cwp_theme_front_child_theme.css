@@ -237,11 +237,11 @@ input, textarea, select {
     min-height: 180px;
     float: left;
     width: 100%; } }
-.product-preview .product-vertical {
+.product-preview.product-vertical {
   width: 100%; }
-  .product-preview .product-vertical .product-grid-buttons p {
+  .product-preview.product-vertical .product-grid-buttons p {
     text-align: center; }
-  .product-preview .product-vertical a.button.product-grid-learn {
+  .product-preview.product-vertical a.button.product-grid-learn {
     background: orange; }
 
 /* Pagination - Pods Stuff */
