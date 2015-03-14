@@ -294,6 +294,19 @@ input, textarea, select {
 	}
 }
 
+//sidebar version of product grid
+.product-preview .product-vertical {
+  width: 100%;
+
+  .product-grid-buttons p {
+    text-align: center;
+  }
+
+  a.button.product-grid-learn {
+    background: orange;
+  }
+}
+
 /* Pagination - Pods Stuff */
 
 .pods-pagination-advanced  {
