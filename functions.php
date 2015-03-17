@@ -203,7 +203,7 @@ add_action( 'init', function() {
  * @todo finish the plugin for this
  */
 add_action( 'edd_purchase_history_row_end', function( $post, $purchase_data ) {
-	$discounts = array( 578 =>
+	$discounts = array( 1427 =>
 		array(
 			'label' => 'Clarity Launch Discount: 10% off of FacetWP',
 			'code' => 'CLARITY',
