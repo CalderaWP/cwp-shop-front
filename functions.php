@@ -61,7 +61,9 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
  }
  add_action( 'wp_head', 'cwp_sf_child_header_meta' );
 
-
+/**
+ * EVERYTHING BELOW THIS LINE HAS NO PLACE IN A THEME
+ */
 
 include( dirname( __FILE__ ) . '/includes/CWP_Social.php' );
 
@@ -133,8 +135,6 @@ add_action( 'wp_head', function(){
 	</script>
 <?php
 });
-
-
 
 /**
  * Licensing FAQ Link
