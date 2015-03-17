@@ -196,3 +196,38 @@ add_action( 'init', function() {
 
 	}, 50 );
 });
+
+/**
+ * Add Clarity Discount To Purchase History
+ *
+ * @todo finish the plugin for this
+ */
+add_action( 'edd_purchase_history_row_end', function( $post, $purchase_data ) {
+	$discounts = array( 578 =>
+		array(
+			'label' => 'Clarity Launch Discount: 10% off of FacetWP',
+			'code' => 'CLARITY',
+			'link' => '<a href="https://facetwp.com/?ref=61" title="But FacetWP">Use Your Discount At FacetWP.com</a>',
+		)
+	);
+	if ( isset( $purchase_data[ 'downloads'] ) && is_array( $purchase_data[ 'downloads'] ) ) {
+
+		$downloads = wp_list_pluck( $purchase_data[ 'downloads' ], 'id' );
+		foreach( $downloads as $download ) {
+			if ( array_key_exists( (int) $download, $discounts ) ) {
+				$deal = $discounts[ (int) $download ];
+				if ( is_array( $deal ) ) {
+					printf( '<tr class="edd_purchase_row"><td>%1s</td><td><pre style="display: inline;  margin-right: 5px;">%2s</pre></td><td>%3s</td></tr>',
+						$deal[ 'label' ],
+						$deal[ 'code' ],
+						$deal[ 'link' ]
+					);
+					break;
+				}
+			}
+
+		}
+
+	}
+}, 10, 2 );
+
