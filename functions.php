@@ -231,3 +231,14 @@ add_action( 'edd_purchase_history_row_end', function( $post, $purchase_data ) {
 	}
 }, 10, 2 );
 
+/**
+ * Move soical discounts up.
+ */
+add_filter( 'the_content', function( $content ) {
+	if ( function_exists( 'edd_social_discounts' ) && is_singular( 'download' )  ) {
+		$content .= do_shortcode( '[edd_social_discount]');
+	}
+
+	return $content;
+}, 8 );
+
