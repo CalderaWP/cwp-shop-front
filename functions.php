@@ -230,3 +230,15 @@ add_filter( 'the_content', function( $content ) {
 	return $content;
 }, 8 );
 
+/**
+ * Cast products Easy Pod order field as a decimal.
+ *
+ * Workaround for: https://bitbucket.org/calderadev/caldera-easy-pods/issue/20/order-should-cast-as-number-date
+ */
+add_filter( 'caldera_easy_pods_query_params', function( $params, $pod, $tags, $easy_pod_slug ) {
+	if ( 'products' == $easy_pod_slug  ) {
+		$params[ 'orderby' ] = 'CAST( order.meta_value AS DECIMAL ) ASC';
+	}
+
+	return $params;
+}, 10, 4 );
