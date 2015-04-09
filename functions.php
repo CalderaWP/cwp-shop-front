@@ -137,11 +137,14 @@ add_action( 'wp_head', function(){
 });
 
 /**
- * Licensing FAQ Link
+ * Licensing FAQ Link -> if is not a free download.
  */
  add_filter( 'edd_purchase_download_form', function( $html ) {
-	 $url = get_permalink( 1577 );
-	 $html .= sprintf( '<div class="license-term-link"><a href="%1s" title="Licensing Terms" target="_blank">Licensing FAQ</a> </div>', esc_url( $url ) );
+	 global $post;
+	 if ( is_object( $post ) && ! edd_is_free_download( $post->ID ) ) {
+		 $url = get_permalink( 1577 );
+		 $html .= sprintf( '<div class="license-term-link"><a href="%1s" title="Licensing Terms" target="_blank">Licensing FAQ</a> </div>', esc_url( $url ) );
+	 }
 	 return $html;
 
  });
@@ -212,11 +215,16 @@ add_filter( 'edd_get_variable_prices', function( $prices, $download_id ) {
 }, 99, 2 );
 
 /**
- * Move soical discounts up.
+ * Move social discounts up anmd don't show on free plugins.
  */
 add_filter( 'the_content', function( $content ) {
+
 	if ( function_exists( 'edd_social_discounts' ) && is_singular( 'download' )  ) {
-		$content .= do_shortcode( '[edd_social_discount]');
+		global $post;
+		if ( is_object( $post ) && ! edd_is_free_download( $post->ID ) ) {
+			$content .= do_shortcode( '[edd_social_discount]');
+		}
+
 	}
 
 	return $content;
