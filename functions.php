@@ -210,7 +210,8 @@ add_filter( 'edd_get_variable_prices', function( $prices, $download_id ) {
 		if ( 0 < $this_price ) {
 			
 			//make 15 site option more expensive
-			if ( 3 == (int) $i ) {
+			//but not if is a bundle.
+			if ( ! edd_is_bundled_product( $download_id ) && 3 == (int) $i ) {
 				$this_price = ( $this_price * 1.2 );
 			}else{
 
