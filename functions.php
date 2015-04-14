@@ -205,26 +205,26 @@ add_action( 'init', function() {
  */
 add_filter( 'edd_get_variable_prices', function( $prices, $download_id ) {
 
-	foreach( $prices as $i => $price ) {
-		$this_price = absint( $price[ 'amount' ] );
-		if ( 0 < $this_price ) {
-			
-			//make 15 site option more expensive
-			//but not if is a bundle.
-			if ( ! edd_is_bundled_product( $download_id ) && 3 == (int) $i ) {
-				$this_price = ( $this_price * 1.2 );
-			}else{
+	if ( ! is_admin() ) {
+		foreach ( $prices as $i => $price ) {
+			$this_price = absint( $price['amount'] );
+			if ( 0 < $this_price ) {
 
-				//make all other options $1 less expensive.
-				$this_price = (int) $this_price - 1;
+				//make 15 site option more expensive
+				//but not if is a bundle.
+				if ( ! edd_is_bundled_product( $download_id ) && 3 == (int) $i ) {
+					$this_price = ( $this_price * 1.2 );
+				} else {
+
+					//make all other options $1 less expensive.
+					$this_price = (int) $this_price - 1;
+				}
+
+				$prices[ $i ]['amount'] = edd_sanitize_amount( $this_price );
+
 			}
 
-
-
-			$prices[ $i ][ 'amount' ] = edd_sanitize_amount( $this_price );
-
 		}
-
 	}
 
 	return $prices;
