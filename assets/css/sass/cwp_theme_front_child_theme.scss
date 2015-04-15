@@ -429,3 +429,33 @@ a.pods-pagination-number ,
 		}
 	}
 }
+
+/**Testimonials**/
+.testimonials {
+  .quote {
+    width: 40%;
+    display: inline-block;
+  }
+
+  a.avatar-link {
+    display: inline;
+    float: right;
+  }
+
+  span.url {
+    display: block;
+  }
+
+  span.title {
+    display: block;
+  }
+
+  cite.author {
+    font-style: normal;
+  }
+
+  .quote:nth-child(odd) {
+    margin-right: 5%;
+  }
+
+}

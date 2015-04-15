@@ -258,3 +258,9 @@ add_filter( 'caldera_easy_pods_query_params', function( $params, $pod, $tags, $e
 
 	return $params;
 }, 10, 4 );
+
+add_filter( 'woothemes_testimonials_post_type_args', function( $args )  {
+	$args[ 'public' ] = $args[ 'publicly_queryable' ] = $args[ 'has_archive' ] = false;
+	$args [ 'menu_position' ] = 45;
+	return $args;
+});

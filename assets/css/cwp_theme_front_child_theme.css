@@ -355,3 +355,19 @@ a.pods-pagination-number,
       padding: 2px; }
     .about-box .social a:hover {
       color: #93af51; }
+
+/**Testimonials**/
+.testimonials .quote {
+  width: 40%;
+  display: inline-block; }
+.testimonials a.avatar-link {
+  display: inline;
+  float: right; }
+.testimonials span.url {
+  display: block; }
+.testimonials span.title {
+  display: block; }
+.testimonials cite.author {
+  font-style: normal; }
+.testimonials .quote:nth-child(odd) {
+  margin-right: 5%; }
