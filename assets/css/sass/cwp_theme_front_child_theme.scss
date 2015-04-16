@@ -463,3 +463,19 @@ a.pods-pagination-number ,
 .testimonials-list .quote:only-child {
   width: 100%;
 }
+
+//product grid for what's in bundle, or bundle included in.
+@each $easypod in CEP552f23b923f84309, CEP552f28b03cea4129, CEP552f285f99959567 {
+  ##{$easypod}_wrapper_inner .product-grid {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 840px) {
+    ##{$easypod}_wrapper_inner .product-gri {
+      width: 50%;
+      margin-bottom: 12px;
+    }
+
+  }
+}
+
