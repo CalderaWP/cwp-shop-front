@@ -374,3 +374,7 @@ a.pods-pagination-number,
 
 .testimonials-list .quote:only-child {
   width: 100%; }
+
+@media only screen and (max-width: 840px) {
+  .single-download .product-preview.product-grid {
+    width: 100% !important; } }
