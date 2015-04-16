@@ -374,25 +374,3 @@ a.pods-pagination-number,
 
 .testimonials-list .quote:only-child {
   width: 100%; }
-
-#CEP552f28b03cea4129_wrapper_inner .product-grid {
-  width: 33%; }
-
-@media only screen and (max-width: 840px) {
-  #CEP552f28b03cea4129_wrapper_inner .product-gri {
-    width: 100%;
-    margin-bottom: 12px; } }
-#CEP552f285f99959567_wrapper_inner .product-grid {
-  width: 33%; }
-
-@media only screen and (max-width: 840px) {
-  #CEP552f285f99959567_wrapper_inner .product-gri {
-    width: 100%;
-    margin-bottom: 12px; } }
-#CEP552f23b923f84309 .product-grid {
-  width: 25%; }
-
-@media only screen and (max-width: 840px) {
-  #CEP552f23b923f84309 .product-grid {
-    width: 100%;
-    margin-bottom: 12px; } }
