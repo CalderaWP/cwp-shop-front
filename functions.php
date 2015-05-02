@@ -264,3 +264,41 @@ add_filter( 'woothemes_testimonials_post_type_args', function( $args )  {
 	$args [ 'menu_position' ] = 45;
 	return $args;
 });
+
+/**
+ *   Send purchase details to With TrackWP
+ */
+add_action( 'edd_complete_purchase', function( $payment_id ) {
+
+	if ( class_exists( 'trackWP' ) ) {
+		$user = edd_get_payment_meta_user_info( $payment_id );
+		$user_id  = edd_get_payment_user_id( $payment_id );
+
+		$traits = array(
+			'userId'    => is_user_logged_in() ? $user_id : session_id(),
+			'firstName' => $user[ 'first_name' ],
+			'lastName'  => $user[ 'last_name' ],
+			'email'     => $user[ 'email' ],
+		);
+
+		$downloads = edd_get_payment_meta_cart_details( $payment_id );
+		$products  = array();
+
+		foreach ( $downloads as $download ) {
+			$products[] = array(
+				'title' => get_the_title( $download[ 'id' ] ),
+				'id' => $download[ 'id' ]
+			);
+		}
+
+		$props = array(
+			'trans_id' => edd_get_payment_transaction_id( $payment_id ),
+			'total'    => edd_get_payment_amount( $payment_id ),
+			'time'     => strtotime( edd_get_payment_completed_date( $payment_id ) ),
+			'products' => $products
+		);
+
+		trackWP::track_event( 'purchased', $props, $traits, $user_id );
+	}
+
+});
