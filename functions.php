@@ -292,7 +292,7 @@ add_action( 'edd_complete_purchase', function( $payment_id ) {
 		}
 
 		$props = array(
-			'trans_id' => edd_get_payment_transaction_id( $payment_id ),
+			'orderID' => edd_get_payment_transaction_id( $payment_id ),
 			'total'    => edd_get_payment_amount( $payment_id ),
 			'time'     => strtotime( edd_get_payment_completed_date( $payment_id ) ),
 			'products' => $products
