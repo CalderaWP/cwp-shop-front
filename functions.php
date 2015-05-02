@@ -298,7 +298,7 @@ add_action( 'edd_complete_purchase', function( $payment_id ) {
 			'products' => $products
 		);
 
-		trackWP::track_event( 'purchased', $props, $traits, $user_id );
+		trackWP::track_event( 'Completed Order', $props, $traits, $user_id );
 	}
 
 });
