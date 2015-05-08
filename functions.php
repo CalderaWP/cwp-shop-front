@@ -302,3 +302,11 @@ add_action( 'edd_complete_purchase', function( $payment_id ) {
 	}
 
 });
+
+/**
+ * Add support for Aesop features
+ */
+add_action( 'after_setup_theme', function() {
+	add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
+
+}, 50 );
