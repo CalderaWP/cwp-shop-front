@@ -62,6 +62,13 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
  add_action( 'wp_head', 'cwp_sf_child_header_meta' );
 
 /**
+ * Remove secondary menu on checkout
+ */
+if ( is_page( 'checkout' ) ) {
+	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_secondary_nav' );
+}
+
+/**
  * EVERYTHING BELOW THIS LINE HAS NO PLACE IN A THEME
  */
 
@@ -310,3 +317,4 @@ add_action( 'after_setup_theme', function() {
 	add_theme_support("aesop-component-styles", array("parallax", "image", "quote", "gallery", "content", "video", "audio", "collection", "chapter", "document", "character", "map", "timeline" ) );
 
 }, 50 );
+
