@@ -65,7 +65,7 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
  * Remove secondary menu on checkout
  */
 if ( is_page( 'checkout' ) ) {
-	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_secondary_nav' );
+	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_secondary_nav', 15 );
 }
 
 /**
