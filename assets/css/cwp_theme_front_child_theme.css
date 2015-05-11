@@ -362,13 +362,14 @@ a.pods-pagination-number,
   display: inline-block;
   background: #7e943d;
   padding: 4px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  color: white; }
   .testimonials .quote a {
-    color: white; }
+    color: #ff7e30; }
     .testimonials .quote a:hover {
-      color: #cfcfcf; }
+      color: #3a3a3c; }
 .testimonials a.avatar-link {
-  color: white;
+  color: #ff7e30;
   display: inline;
   float: right; }
 .testimonials span.url {

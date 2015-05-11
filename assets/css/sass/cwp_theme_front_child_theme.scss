@@ -438,17 +438,18 @@ a.pods-pagination-number ,
     background: $dark_green;
     padding: 4px;
     margin-bottom: 8px;
+    color: white;
     a {
-      color:$white;
+      color:$orange;
       &:hover {
-        color: $lighter_grey;
+        color: $dark_gray;
       }
     }
 
   }
 
   a.avatar-link {
-    color: $white;
+    color: $orange;
     display: inline;
     float: right;
   }
