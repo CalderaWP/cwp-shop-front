@@ -435,21 +435,21 @@ a.pods-pagination-number ,
   .quote {
     width: 40%;
     display: inline-block;
-    background: $dark_green;
+    background: $primary_green;
     padding: 4px;
     margin-bottom: 8px;
     color: white;
     a {
-      color:$orange;
+      color:$dark_gray;
       &:hover {
-        color: $dark_gray;
+        color: $lighter_grey;
       }
     }
 
   }
 
   a.avatar-link {
-    color: $orange;
+    color: $dark_gray;
     display: inline;
     float: right;
   }

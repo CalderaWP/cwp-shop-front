@@ -360,16 +360,16 @@ a.pods-pagination-number,
 .testimonials .quote {
   width: 40%;
   display: inline-block;
-  background: #7e943d;
+  background: #a3bf61;
   padding: 4px;
   margin-bottom: 8px;
   color: white; }
   .testimonials .quote a {
-    color: #ff7e30; }
+    color: #3a3a3c; }
     .testimonials .quote a:hover {
-      color: #3a3a3c; }
+      color: #cfcfcf; }
 .testimonials a.avatar-link {
-  color: #ff7e30;
+  color: #3a3a3c;
   display: inline;
   float: right; }
 .testimonials span.url {
