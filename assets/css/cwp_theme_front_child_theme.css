@@ -359,8 +359,16 @@ a.pods-pagination-number,
 /**Testimonials**/
 .testimonials .quote {
   width: 40%;
-  display: inline-block; }
+  display: inline-block;
+  background: #7e943d;
+  padding: 4px;
+  margin-bottom: 8px; }
+  .testimonials .quote a {
+    color: white; }
+    .testimonials .quote a:hover {
+      color: #cfcfcf; }
 .testimonials a.avatar-link {
+  color: white;
   display: inline;
   float: right; }
 .testimonials span.url {

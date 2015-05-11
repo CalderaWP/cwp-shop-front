@@ -435,9 +435,20 @@ a.pods-pagination-number ,
   .quote {
     width: 40%;
     display: inline-block;
+    background: $dark_green;
+    padding: 4px;
+    margin-bottom: 8px;
+    a {
+      color:$white;
+      &:hover {
+        color: $lighter_grey;
+      }
+    }
+
   }
 
   a.avatar-link {
+    color: $white;
     display: inline;
     float: right;
   }
