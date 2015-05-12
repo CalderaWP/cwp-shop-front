@@ -322,6 +322,7 @@ add_action( 'after_setup_theme', function() {
  * Drip code
  */
  add_action( 'wp_footer', function() {
+	 if ( ! current_user_can( 'edit_posts' ) ) :
 	?>
 <!-- Drip -->
 <script type="text/javascript">
@@ -337,4 +338,6 @@ add_action( 'after_setup_theme', function() {
 		s.parentNode.insertBefore(dc, s);
 	})();
 </script><?php
+	endif;
+
  });
