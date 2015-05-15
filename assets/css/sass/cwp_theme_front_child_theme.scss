@@ -481,3 +481,32 @@ a.pods-pagination-number ,
     width: 100% !important;
   }
 }
+
+/**New Front Page **/
+.post-2823 {
+  h3.front-headline {
+    background: $dark_green;
+    color: $white;
+    font-size: 1.6em;
+    padding: 1rem .3rem 1rem .6rem;
+  }
+
+  h3 span {
+    float: right;
+    font-size: 1.3rem;
+  }
+  @media only screen and (max-width: 840px) {
+    h3 span {
+      float: none;
+      text-align: right;
+      display: block;
+    }
+  }
+
+  a.button {
+    background: orange;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 40%;
+  }
+}

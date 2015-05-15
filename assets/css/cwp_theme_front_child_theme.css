@@ -387,3 +387,22 @@ a.pods-pagination-number,
 @media only screen and (max-width: 840px) {
   .single-download .product-preview.product-grid {
     width: 100% !important; } }
+/**New Front Page **/
+.post-2823 h3.front-headline {
+  background: #7e943d;
+  color: white;
+  font-size: 1.6em;
+  padding: 1rem .3rem 1rem .6rem; }
+.post-2823 h3 span {
+  float: right;
+  font-size: 1.3rem; }
+@media only screen and (max-width: 840px) {
+  .post-2823 h3 span {
+    float: none;
+    text-align: right;
+    display: block; } }
+.post-2823 a.button {
+  background: orange;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 40%; }
