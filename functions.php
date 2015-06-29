@@ -341,3 +341,16 @@ add_action( 'after_setup_theme', function() {
 	endif;
 
  });
+ 
+ /**
+ * Make the name of a coupon created by Reciptful the email address of user.
+ */
+add_filter( 'edd_insert_discount', function( $meta, $payment_id ) {
+	if ( is_array( $meta ) &&  isset( $meta[ 'is_receiptful_coupon' ] ) && 'yes' == $meta[ 'is_receiptful_coupon' ] ) {
+		$payment_data	= edd_get_payment_meta( $payment_id );
+		$meta[ 'name' ]  = $payment_data['user_info']['email'];
+	}
+	
+	return $meta;
+	
+});
