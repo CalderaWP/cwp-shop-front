@@ -354,3 +354,19 @@ add_filter( 'edd_insert_discount', function( $meta, $payment_id ) {
 	return $meta;
 	
 });
+
+/**
+ * Make invoice # field the Stripe payment description in the invoice payment form.
+ */ 
+add_filter( 'cf_stripe_charge_args', function( $args, $config, $form ) {
+	if ( 'CF55ad52f365425' == $form[ 'ID' ] ) {
+		$invoice_number = Caldera_Forms::get_field_data( 'fld_9538754', $form );
+		if ( is_string( $invoice_number ) ) {
+			$args['description'] = 'Invoice # ' . $invoice_number;
+		}
+		
+	}
+
+
+	return $args;
+}, 10, 3);
