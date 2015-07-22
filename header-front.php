@@ -26,11 +26,7 @@
 
 <div id="site" class="hfeed">
 
-<?php do_action( 'shopfront_site_start' ); ?>
 
-<?php do_action( 'shopfront_header' ); ?>
-
-<?php do_action( 'shopfront_container_before' ); ?>
 
 	<div id="container" class="front-container">
 
@@ -40,4 +36,4 @@
 
 			<div id="content" class="front-content">
 
-			
+
