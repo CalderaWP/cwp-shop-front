@@ -24,7 +24,7 @@
 			 * Footer sidebars
 			*/
 			if ( ! is_404() )
-				get_sidebar( 'footer' );
+				//get_sidebar( 'footer' );
 
 		?>
 
