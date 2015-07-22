@@ -522,6 +522,7 @@ a.pods-pagination-number ,
   text-align: center;
   width: 100%;
   margin-bottom: 10px
+  display:block;
 }
 
 .home #content {
@@ -529,4 +530,8 @@ a.pods-pagination-number ,
 }
 .home #masthead {
   margin-bottom: 0px
+}
+
+.home h1.entry-title {
+  display: none;
 }
