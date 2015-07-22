@@ -510,4 +510,19 @@ a.pods-pagination-number ,
     margin: 0 10%;
     width: 80%;
   }
+
+}
+//header stuff for front page
+.home h1.entry-title {
+  display: block;
+}
+
+.home #masthead #site-description {
+  font-size: 2.25rem;
+  color: white;
+  display: inline;
+}
+
+.home h1.entry-title {
+  display: none;
 }
