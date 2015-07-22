@@ -523,13 +523,15 @@ a.pods-pagination-number ,
   width: 100%;
   margin-bottom: 10px;
   display:block;
+  display: block !important;
+  text-size: 2.5rem;
 }
 
 .home #content {
   padding-top: 0px;
 }
 .home #masthead {
-  margin-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .home h1.entry-title {
