@@ -49,13 +49,13 @@
 					<h2 id="site-description">' . get_bloginfo( 'description' ) .'</h2>
 				</hgroup>
 				';
-			
+
 				echo  $output;
 				?>
 
 				<?php do_action( 'shopfront_header_site_title_end' ); ?>
 
-			<?php do_action( 'shopfront_header_wrapper_end' ); ?>
+
 
 		</div>
 
