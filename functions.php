@@ -76,6 +76,8 @@ if ( is_front_page() ) {
 	//remove_filter( 'shopfront_header_output', 'shopfront_header_logo' );
 	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_nav_toggle', 19 );
 	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_secondary_nav', 15 );
+	remove_action( 'shopfront_header_end', 'shopfront_do_nav', 9 );
+	wp_die( 'is front?' );
 }
 
 /**
