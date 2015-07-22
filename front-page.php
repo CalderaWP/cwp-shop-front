@@ -3,7 +3,7 @@
  * The template for displaying the front page
  */
 
-get_header(); ?>
+get_header( 'front' ); ?>
 	<section id="primary">
 		<div class="wrapper">
 			<?php do_action( 'shopfront_primary_wrapper_start' ); ?>

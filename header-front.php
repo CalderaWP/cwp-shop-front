@@ -33,13 +33,11 @@
 <?php do_action( 'shopfront_container_before' ); ?>
 
 	<div id="container" class="front-container">
-	<?php do_action( 'shopfront_container_start' ); ?>
+
 
 		<div class="wrapper" class="front-wrapper">
-		<?php do_action( 'shopfront_container_wrapper_start' ); ?>
 
-		<?php do_action( 'shopfront_content_before' ); ?>
 
 			<div id="content" class="front-content">
 
-			<?php do_action( 'shopfront_content_start' ); ?>
+			
