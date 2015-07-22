@@ -408,13 +408,17 @@ a.pods-pagination-number,
   margin: 0 10%;
   width: 80%; }
 
-.home h1.entry-title {
-  display: block; }
+.site-title-front {
+  text-align: center;
+  width: 100%; }
 
-.home #masthead #site-description {
-  font-size: 2.25rem;
-  color: white;
-  display: inline; }
+.home.page #site-description {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px; }
 
-.home h1.entry-title {
-  display: none; }
+.home #content {
+  padding-top: 0px; }
+
+.home #masthead {
+  margin-bottom: 0px; }
