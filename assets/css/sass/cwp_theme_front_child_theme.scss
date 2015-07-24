@@ -534,9 +534,14 @@ a.pods-pagination-number ,
   }
   #masthead {
 	margin-bottom: 15px;
-	#site-title a {
-	  background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center / 164px auto rgba(0, 0, 0, 0);
+	@media only screen and (min-width: 719px) {
+	  #site-title a {
+		background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center / 600px auto rgba(0, 0, 0, 0) !important;
+		width: 1200px;
+		margin-left: 0;
+	  }
 	}
+
   }
 
   h1.entry-title {

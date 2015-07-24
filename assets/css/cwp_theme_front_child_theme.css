@@ -424,8 +424,11 @@ a.pods-pagination-number,
   padding-top: 0px; }
 .home #masthead {
   margin-bottom: 15px; }
-  .home #masthead #site-title a {
-    background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center/164px auto transparent; }
+  @media only screen and (min-width: 719px) {
+    .home #masthead #site-title a {
+      background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center/600px auto transparent !important;
+      width: 1200px;
+      margin-left: 0; } }
 .home h1.entry-title {
   display: none; }
 .home .product-preview.product-grid {
