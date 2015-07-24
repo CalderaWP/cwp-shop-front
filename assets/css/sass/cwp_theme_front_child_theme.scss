@@ -536,9 +536,10 @@ a.pods-pagination-number ,
 	margin-bottom: 15px;
 	@media only screen and (min-width: 719px) {
 	  #site-title a {
-		background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center / 600px auto rgba(0, 0, 0, 0) !important;
-		width: 1200px;
-		margin-left: 0;
+		background: url(../../images/calderawp-inline-logo.png) no-repeat scroll left center/300px auto rgba(0, 0, 0, 0)!important;
+		margin-bottom: 10px;
+		width: 600px;
+		margin-left: 300px;
 	  }
 	}
 
