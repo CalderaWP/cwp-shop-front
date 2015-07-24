@@ -428,3 +428,5 @@ a.pods-pagination-number,
   display: none; }
 .home .product-preview.product-grid {
   min-height: inherit; }
+.home #site-title a {
+  background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center/164px auto transparent; }
