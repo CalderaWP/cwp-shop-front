@@ -20,11 +20,17 @@
 		<?php do_action( 'shopfront_footer_wrapper_start' ); ?>
 
 		<?php
-			/**		
-			 * Footer sidebars
-			*/
-			if ( ! is_404() )
-				//get_sidebar( 'footer' );
+		wp_nav_menu(
+			array(
+				'menu' => 'main_nav',
+				'menu_class' => 'menu',
+				'theme_location' => 'footer',
+				'container' => 'nav',
+				'container_id' => 'main',
+				'fallback_cb' => '',
+				'depth' => '3',
+			)
+		);
 
 		?>
 
