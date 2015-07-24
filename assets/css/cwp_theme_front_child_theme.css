@@ -407,7 +407,11 @@ a.pods-pagination-number,
   text-align: center;
   margin: 0 20%;
   width: 60%;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #cfcfcf; }
+  .post-2823 a.button:hover {
+    background: #93af51; }
 
 .site-title-front {
   text-align: center;
