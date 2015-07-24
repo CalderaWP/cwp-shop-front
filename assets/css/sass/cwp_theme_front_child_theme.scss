@@ -534,6 +534,9 @@ a.pods-pagination-number ,
   }
   #masthead {
 	margin-bottom: 15px;
+	#site-title a {
+	  background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center / 164px auto rgba(0, 0, 0, 0);
+	}
   }
 
   h1.entry-title {
@@ -544,7 +547,5 @@ a.pods-pagination-number ,
 	min-height: inherit;
   }
 
-  #site-title a {
-	background: url("../../images/calderawp-inline-logo.png") no-repeat scroll left center / 164px auto rgba(0, 0, 0, 0);
-  }
+
 }
