@@ -39,7 +39,7 @@
 			<?php do_action( 'shopfront_header_wrapper_start' ); ?>
 
 			<?php
-			    echo shopfront_do_nav();
+			    echo shopfront_do_secondary_nav();
 				$tagline = get_bloginfo( 'description' );
 
 				$output = '
