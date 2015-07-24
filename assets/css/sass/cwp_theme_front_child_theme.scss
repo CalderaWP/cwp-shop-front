@@ -517,23 +517,28 @@ a.pods-pagination-number ,
   text-align: center;
   width: 100%;
 }
+.home {
+  .page #site-description {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 10px;
+	display: block !important;
+	font-size: 2.5rem;
+	color: #FFF;
+  }
 
-.home.page #site-description {
-  text-align: center;
-  width: 100%;
-  margin-bottom: 10px;
-  display: block !important;
-  font-size: 2.5rem;
-  color: #FFF;
-}
+  #content {
+	padding-top: 0px;
+  }
+  #masthead {
+	margin-bottom: 15px;
+  }
 
-.home #content {
-  padding-top: 0px;
-}
-.home #masthead {
-  margin-bottom: 15px;
-}
+  h1.entry-title {
+	display: none;
+  }
 
-.home h1.entry-title {
-  display: none;
+  .product-preview.product-grid {
+	min-height: inherit;
+  }
 }
