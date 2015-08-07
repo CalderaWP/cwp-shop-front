@@ -151,6 +151,7 @@ add_action( 'wp_head', function(){
 	 if ( is_object( $post ) && ! edd_is_free_download( $post->ID ) ) {
 		 $url = get_permalink( 1577 );
 		 $html .= sprintf( '<div class="license-term-link"><a href="%1s" title="Licensing Terms" target="_blank">Licensing FAQ</a> </div>', esc_url( $url ) );
+		 $html .= '<p id="money-back">We Offer A 30-day Money Back Guarantee!</p>';
 	 }
 	 return $html;
 
