@@ -560,7 +560,11 @@ a.pods-pagination-number ,
 
 }
 
-#post-header-author-info .author-avatar img {
-  float: right;
-  display: inline;
+#post-header-author-info {
+  margin-bottom: 0px;
+  .author-avatar img {
+	float: right;
+	display: inline;
+  }
+
 }

@@ -439,6 +439,8 @@ a.pods-pagination-number,
 .home .product-preview.product-grid {
   min-height: inherit; }
 
-#post-header-author-info .author-avatar img {
-  float: right;
-  display: inline; }
+#post-header-author-info {
+  margin-bottom: 0px; }
+  #post-header-author-info .author-avatar img {
+    float: right;
+    display: inline; }
