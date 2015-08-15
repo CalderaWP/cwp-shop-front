@@ -23,7 +23,7 @@
 			/**		
 			 * Footer sidebars
 			*/
-			if ( ! is_404() && ! is_page( 'checkout' ) ) {
+			if ( 1==9 && ! is_404() && ! is_page( 'checkout' ) ) {
 				get_sidebar( 'footer' );
 
 			}
