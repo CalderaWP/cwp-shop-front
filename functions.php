@@ -323,7 +323,7 @@ add_action( 'after_setup_theme', function() {
  * Drip code
  */
  add_action( 'wp_footer', function() {
-	 if ( ! current_user_can( 'edit_posts' ) ) :
+	 if ( 1===5 || ! current_user_can( 'edit_posts' ) ) :
 	?>
 <!-- Drip -->
 <script type="text/javascript">
