@@ -393,3 +393,31 @@ add_filter( 'cf_stripe_charge_args', function( $args, $config, $form ) {
 <!-- End Facebook Pixel Code -->
 <?php
  });
+
+/**
+ * More retargetting
+ */
+add_action( 'wp_footer', function() {
+	$id = false;
+	global $post;
+	if ( is_object( $post ) ) {
+		if ( 'download' == $post->post_type ) {
+			$id = $post->ID;
+		}
+	}
+	?>
+<script type="text/javascript">
+	(function() {
+		window._pa = window._pa || {};
+		// _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+		// _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+		<?php if ( $id ) : ?>
+			_pa.productId = "<?php echo $id;?>";
+		<?php endif; ?>
+		var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+		pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/55de7a4eae71847b4600006f.js";
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+	})();
+</script>
+<?php
+});
