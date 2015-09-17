@@ -444,3 +444,12 @@ a.pods-pagination-number,
   #post-header-author-info .author-avatar img {
     float: right;
     display: inline; }
+
+#footer #cwp-social-links {
+  padding-top: 12px;
+  text-align: center;
+  margin-left: 60px; }
+  #footer #cwp-social-links li {
+    display: inline;
+    margin: 12px;
+    padding: 8px; }

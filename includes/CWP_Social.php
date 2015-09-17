@@ -100,7 +100,7 @@ class CWP_Social {
 			$what = ucwords( $what );
 
 			$social[] = sprintf(
-				'<a href="%1s" title="%2s\'s %3s" target="_blank"><span class="genericon genericon-%4s"></span></a>',
+				'<a href="%1s" title="%2s\'s %3s" target="_blank"><span class="dashicons dashicons-%4s"></span></a>',
 				esc_url( $link ), $name, $what, $network
 			);
 
@@ -148,6 +148,7 @@ class CWP_Social {
 		$content = $wrap[ 'before_widget' ] . $content . $wrap[ 'after_widget' ];
 
 		return $content;
+
 	}
 
 }

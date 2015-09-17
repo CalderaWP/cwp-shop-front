@@ -45,6 +45,8 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
 	wp_deregister_style( 'style' );
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css' );
 
+	 wp_enqueue_script( 'dashicons' );
+
 	wp_enqueue_script( 'cwp_sf_child', get_stylesheet_directory_uri() . "/assets/js/cwp_theme_front_child_theme{$postfix}.js", array(), CWP_SF_CHILD_VERSION, true );
 		
 	wp_enqueue_style( 'cwp_sf_child', get_stylesheet_directory_uri() . "/assets/css/cwp_theme_front_child_theme{$postfix}.css", array(), CWP_SF_CHILD_VERSION );
@@ -67,6 +69,15 @@ define( 'CWP_SF_CHILD_VERSION', '0.1.0' );
 if ( is_page( 'checkout' ) ) {
 	remove_action( 'shopfront_header_wrapper_end', 'shopfront_do_secondary_nav', 15 );
 }
+
+
+/**
+ * add social links to footer
+ */
+add_action( 'shopfront_footer_start', function() {
+
+	echo CWP_Social::cwp_social_links();
+});
 
 /**
  * EVERYTHING BELOW THIS LINE HAS NO PLACE IN A THEME
