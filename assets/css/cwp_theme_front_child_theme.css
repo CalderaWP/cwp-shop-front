@@ -387,32 +387,6 @@ a.pods-pagination-number,
 @media only screen and (max-width: 840px) {
   .single-download .product-preview.product-grid {
     width: 100% !important; } }
-/**New Front Page **/
-.post-2823 h3.front-headline {
-  background: #7e943d;
-  color: white;
-  font-size: 1.6em;
-  padding: 1rem .3rem 1rem .6rem; }
-.post-2823 h3 span {
-  float: right;
-  font-size: 1.3rem; }
-@media only screen and (max-width: 840px) {
-  .post-2823 h3 span {
-    float: none;
-    text-align: right;
-    display: block; } }
-.post-2823 a.button {
-  background: orange;
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 0 20%;
-  width: 60%;
-  margin-bottom: 40px;
-  border-radius: 4px;
-  box-shadow: 0 4px 0 #cfcfcf; }
-  .post-2823 a.button:hover {
-    background: #93af51; }
-
 .site-title-front {
   text-align: center;
   width: 100%; }
@@ -453,3 +427,47 @@ a.pods-pagination-number,
     display: inline;
     margin: 12px;
     padding: 8px; }
+
+/**New Front Page **/
+.home section#primary {
+  width: 100%;
+  text-align: center; }
+  .home section#primary h2 {
+    font-size: 3em; }
+  .home section#primary h3 {
+    color: #7e943d;
+    font-size: 1.6em;
+    padding: 1rem .3rem 1rem .6rem; }
+  .home section#primary h3 span {
+    float: right;
+    font-size: 1.3rem; }
+  @media only screen and (max-width: 840px) {
+    .home section#primary h3 span {
+      float: none;
+      text-align: right;
+      display: block; } }
+  .home section#primary a.button {
+    background: orange;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 20%;
+    width: 60%;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 0 #cfcfcf; }
+    .home section#primary a.button:hover {
+      background: #93af51; }
+  .home section#primary .front-third {
+    width: 30%;
+    padding-right: 3%;
+    display: inline;
+    float: left; }
+  .home section#primary .front-third-first {
+    padding-left: 3%; }
+  .home section#primary .front-third-last {
+    padding-right: 0%; }
+  .home section#primary .front-half {
+    width: 48%;
+    padding: 0 2%;
+    display: inline;
+    float: left; }

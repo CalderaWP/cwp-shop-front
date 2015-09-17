@@ -482,42 +482,7 @@ a.pods-pagination-number ,
   }
 }
 
-/**New Front Page **/
-.post-2823 {
-  h3.front-headline {
-    background: $dark_green;
-    color: $white;
-    font-size: 1.6em;
-    padding: 1rem .3rem 1rem .6rem;
-  }
 
-  h3 span {
-    float: right;
-    font-size: 1.3rem;
-  }
-  @media only screen and (max-width: 840px) {
-    h3 span {
-      float: none;
-      text-align: right;
-      display: block;
-    }
-  }
-
-  a.button {
-    background: orange;
-    font-size: 1.5rem;
-    text-align: center;
-	margin: 0 20%;
-	width: 60%;
-	margin-bottom: 40px;
-	border-radius: 4px;
-	box-shadow: 0 4px 0 $lighter_grey;
-	&:hover {
-	  background: $primary_green_dark;
-	}
-  }
-
-}
 //header stuff for front page
 .site-title-front {
   text-align: center;
@@ -570,8 +535,6 @@ a.pods-pagination-number ,
 }
 
 #footer {
-
-
   #cwp-social-links {
 	padding-top: 12px;
 	text-align: center;
@@ -582,4 +545,73 @@ a.pods-pagination-number ,
 	  padding: 8px;
 	}
   }
+}
+
+
+/**New Front Page **/
+.home section#primary {
+  width: 100%;
+  text-align: center;
+  h2 {
+    font-size: 3em;
+  }
+  h3 {
+	//background: $dark_green;
+	color: $dark_green;
+	font-size: 1.6em;
+	padding: 1rem .3rem 1rem .6rem;
+  }
+
+  h3 span {
+	float: right;
+	font-size: 1.3rem;
+  }
+
+  @media only screen and (max-width: 840px) {
+	h3 span {
+	  float: none;
+	  text-align: right;
+	  display: block;
+	}
+  }
+
+  a.button {
+	background: orange;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 0 20%;
+	width: 60%;
+	margin-bottom: 40px;
+	border-radius: 4px;
+	box-shadow: 0 4px 0 $lighter_grey;
+	&:hover {
+	  background: $primary_green_dark;
+	}
+  }
+
+
+
+  .front-third {
+    width: 30%;
+    padding-right: 3%;
+    display: inline;
+    float: left;
+  }
+
+  .front-third-first {
+    padding-left: 3%;
+  }
+
+  .front-third-last {
+    padding-right: 0%;
+  }
+
+  .front-half {
+    width: 48%;
+    padding: 0 2%;
+    display: inline;
+    float: left;
+  }
+
+
 }
